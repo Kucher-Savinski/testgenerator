@@ -66,17 +66,19 @@ numel = 0
 wb = openpyxl.Workbook()
 while (True):
     try:
-        print("Enter diapasone for c  : ")
+        print("Enter right side of diapason for c  : ")
         cd = int(input())
-        print("Enter diapasone for a  : ")
+        print("Enter right side of diapason for a  : ")
         ad = int(input())
-        print("Enter diapasone for b (for correct work b must be > 2) : ")
+        print("Enter right side of diapason for b (for correct work b must be > 2) : ")
         bd = int(input())
         print("Enter num of expression  : ")
         numel = int(input())
         break
     except:
         print("Please, input correct data(integer value)")
+
+
 bar = IncrementalBar('Progress', max = numel)
 while (key != numel+1):
     constraints_num = 2
